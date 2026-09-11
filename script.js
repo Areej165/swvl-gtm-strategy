@@ -7,7 +7,7 @@ cards.forEach(card=>{
   card.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();activate()}});
 });
 
-const animated=document.querySelectorAll('.context-card,.channel-card,.journey-step,.contribution,.engine-map,.launch-plan>div');
+const animated=document.querySelectorAll('.context-card,.tool-stack-grid article,.channel-card,.journey-step,.contribution,.engine-map,.launch-plan>div');
 const observer=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
     if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}
