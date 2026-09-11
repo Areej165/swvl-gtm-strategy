@@ -95,3 +95,11 @@ body{background:var(--white)}
 @media(max-width:720px){.engine-map{min-height:850px;height:auto;padding:46px 20px 52px}.engine-map .map-source{width:100%}.map-connector{display:none}.map-channels{grid-template-columns:1fr;gap:10px;margin:22px 0}.engine-map .map-channel{height:66px}.map-result-row{width:100%;grid-template-columns:1fr;gap:32px}.result-arrow{height:26px}.result-arrow:before{left:50%;right:auto;top:0;bottom:0;border-top:0;border-left:1px solid var(--red)}.result-arrow b{transform:rotate(90deg)}.result-arrow i{left:calc(50% - 4px);top:0;animation:signalDown 2s ease-in-out infinite}.engine-map .map-rhythm{left:20px;right:20px}}
 @media(prefers-reduced-motion:reduce){.map-connector i,.result-arrow i{animation:none}}
 
+/* Outreach tool labels */
+.channel-tool{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:16px 0 2px;padding:10px 12px;background:var(--black);color:#fff;border-left:4px solid var(--red)}
+.channel-tool span{font:500 8px var(--mono);letter-spacing:.08em;color:#bdbdbd}
+.channel-tool b{font-size:13px;letter-spacing:-.02em}
+.engine-map .map-channel{height:88px}
+.engine-map .map-channel span b{display:block;margin-top:5px;font:500 8px var(--mono);letter-spacing:.06em;color:var(--red)}
+@media(max-width:720px){.engine-map .map-channel{height:76px}.channel-tool{margin-top:13px}}
+
